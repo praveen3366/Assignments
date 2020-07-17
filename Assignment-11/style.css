@@ -1,0 +1,27 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.button{
+    width:53px;
+    height:50px;
+    font-size: 25px;
+    margin:2px;
+    cursor: pointer;
+    background-color: rgb(170, 214, 214);
+}
+.textview{
+    width:217px;
+    margin: 5px;
+    font-size: 25px;
+    padding:5px;
+    background-color: darkgray;
+
+}
+.main{
+    position:absolute;
+    top:20%;
+    left:40%;
+    background-color: rgb(211, 211, 211);
+
+}
