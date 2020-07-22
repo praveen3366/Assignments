@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+       <title>Unique Random Number</title> 
+        
+</head>
+    <body>
+       <script >
+    let data1=10000000;
+    let data2=99999999;
+    let output=uniqueRandomnumbers(data1,data2);
+    function uniqueRandomnumbers(lower, upper) {
+    randomNumber=Math.floor(Math.random() * (upper - lower) + lower);
+    recursive=(""+randomNumber).split("");
+        for(let i=0;i<recursive.length;i++){
+        for(let j=i+1;j<recursive.length;j++){
+            if(recursive[i]==recursive[j]){
+
+               uniqueRandomnumbers(data1,data2);
+            }
+        }
+    }
+    return randomNumber;
+}
+console.log(output);
+       </script>
+    </body>
+    </html>
