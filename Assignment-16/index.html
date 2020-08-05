@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rest countries Fetch with Asynawait</title>
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <nav>
+        <div class="nav bg-dark nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-fetch-tab" data-toggle="tab" href="#nav-fetch" role="tab" aria-controls="nav-fetch" aria-selected="true"> Rest Countries fetch with weather</a>
+          <a class="nav-item nav-link" id="nav-await-tab" data-toggle="tab" href="#nav-await" role="tab" aria-controls="nav-await" aria-selected="false">Rest Countries fetch with weather (asyn/await)</a>
+          <a class="nav-item nav-link" id="nav-imdb-tab" data-toggle="tab" href="#nav-imdb" role="tab" aria-controls="nav-imdb" aria-selected="false">imdb with(asyn/await)</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-fetch" role="tabpanel" aria-labelledby="nav-fetch-tab">
+         <div class="container-fluid" id="country-data">
+        </div>
+        </div>
+        <div class="tab-pane fade" id="nav-await" role="tabpanel" aria-labelledby="nav-await-tab">
+        <div class="container-fluid" id="country-data-await">
+        </div>
+        </div>
+        <div class="tab-pane fade" id="nav-imdb" role="tabpanel" aria-labelledby="nav-imdb-tab">
+        <div class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search" aria-label="Search">
+            <input type="button" id="search-button" onclick="Imdb()" value="Search">
+          </div>
+        <div class="container-fluid" id="imdb-data">
+        </div>
+        </div>
+      </div>
+      
+
+    <script src="script.js" ></script>
+
+</body>
+
+</html>
