@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
+</head>
+
+<body>
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>
+        Music Player
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+    <ion-item button *ngFor="let track of playlist" (click)="start(track)">
+     <ion-label [color]="track ==activeTrack? 'success': 'light'">
+       {{ track.name}}
+     </ion-label>
+     </ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer *ngIf="activeTrack">
+    <ion-toolbar color="dark">
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+          {{activeTrack.}}
+        </ion-col>
+        <ion-col size="12" >
+          <ion-range #frame [(ngModel)]="progress" max="100" color="success" (touchend)="seek()"(mouse="seek")>
+
+          </ion-range>
+
+        </ion-col>
+        <ion-col size="12" class ="ion-text-center" >
+          <ion-button fill ="clear" (click)="prev()"color="light">
+         <ion-icon slot ="icon-only" name="Skip-backward"></ion-icon>
+          </ion-button>
+
+          <ion-button fill ="clear" (click)="toogleplayer(false)" *ngIf="!isPlaying"color="light">
+            <ion-icon slot ="icon-only" name="play"></ion-icon>
+             </ion-button>
+
+             <ion-button fill ="clear" (click)="toogleplayer(true)" *ngIf="!isPlaying" color="light">
+              <ion-icon slot ="icon-only" name="pause"></ion-icon>
+               </ion-button>
+
+               <ion-button fill ="clear" (click)="prev()"  color="light">
+                <ion-icon slot ="icon-only" name="Skip-forward"></ion-icon>
+                 </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
+  <script src=""></script>
+</body>
+
+</html>
