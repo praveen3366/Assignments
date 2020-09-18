@@ -1,0 +1,13 @@
+1. Find all the information about each film
+2. Find the title of each film
+3. Find the director of each film
+4. Find the title and director of each film
+5. Find the title and year of each film
+6. Find the movie with a row id of 6
+7. Find the movies released in the years between 2000 and 2010
+8. Find the movies not released in the years between 2000 and 2010
+9. Find the first 5 Pixar movies and their release year
+10. Find all the Toy Story movies
+11.Find all the WALL-* movies
+12.List the first five Pixar movies sorted alphabetically
+15.List the next five Pixar movies sorted alphabetically
